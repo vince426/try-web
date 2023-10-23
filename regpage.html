@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Inter:wght@100;200;300;400;500;600;700;800;900&family=Open+Sans:ital,wght@1,300&family=PT+Sans&family=Poppins:wght@100;200;300;400;500;600;700;800;900&family=Prompt:wght@300&family=Roboto:wght@300;400&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="regstyle.css">
+    <title>Organization - Register</title>
+</head>
+<body>
+    
+    <div class="container">
+        <form name="submit-to-google-sheet">
+            <h3>Sign Up</h3>
+            <input type="text" name="Name" placeholder="Name">
+            <input type="email" name="Email" placeholder="Email">
+            <input type="text" name="Username" placeholder="Username">
+            <input type="password" name="Password" placeholder="Password">
+            <input type="password" name="Confirm-password" placeholder="Confirm password">
+            <button type="submit">Register</button>
+        </form>
+    </div>
+
+
+    <script>
+        const scriptURL = 'https://script.google.com/macros/s/AKfycbwcLYcMUKpPZp8fZsHYUcKk9GH29VvIOvnAqhSwDHDzSD5SWnPhzsWbJG_2Dm_16ho5/exec'
+        const form = document.forms['submit-to-google-sheet']
+      
+        form.addEventListener('submit', e => {
+          e.preventDefault()
+          fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+            .then(response => {
+                window.location.href = 'mainpage.html';
+            })
+            .catch(error => console.error('Error!', error.message))
+        })
+      </script>
+</body>
+</html>

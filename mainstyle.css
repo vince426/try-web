@@ -1,0 +1,365 @@
+body {
+    background-color: #272A2B;
+    font-family: 'Inter', sans-serif;
+    overflow-x: hidden;
+}
+
+                                                                            /* this is where the section settings */
+.section {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    /*align-items: center; this destroys the navbar*/
+    min-height: 200px;
+}
+
+                                                                            /* this is the end of section settings */
+
+.navbar-container {
+    display: flex;
+    padding: 50px 75px;
+    justify-content: space-between;
+}
+
+.navbar-left {
+    width: 50%;
+    color: rgba(255, 255, 255, 0.9);
+    font-weight: 900;
+    font-size: 1.5em;
+}
+
+.navbar-right {
+    display: flex;
+    justify-content: space-between;
+    color: white;
+    font-weight: 300;
+}
+.navbar-right .elements {
+    padding: 0px 25px;
+}
+
+
+.first-section-content-container h1 {
+    color: white;
+    font-size: 3.5em;
+    padding: 50px 75px;
+    text-align: center;
+}
+
+.first-section-content-container h1 span {
+    font-weight: 200;
+}
+
+/* fireship curve */                                                     /* fireship curve */
+.spacer {
+    aspect-ratio: 960/300;
+    width: 100%;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover; 
+}
+.yellow-above-curve {
+    background-image: url('yellow-above-curve.svg');
+}
+.flip {
+    transform: rotate(180deg);
+}
+/*fire ship curve */                                                    /*fire ship curve */
+#first-section {
+    height: 450px;
+}
+#second-section {
+    background-color: #EDE872;
+    height: 550px;
+}
+#third-section {
+    height: 200px;
+}
+#fourth-section {
+    height: 650px;
+    background-color: #3CF3FB;
+    top: -200px;
+}
+#fifth-section {
+    max-height: 100px;
+}
+
+
+/* second-section */
+.event-title {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    top: -60px;
+    color: #272A2B;
+}
+
+.event-title h1{
+    font-weight: 900;
+    font-size: 2.5em;
+}
+
+.event-viewer,
+.event-viewer-left {
+    display: flex;
+}
+
+.event-viewer-left {
+    width: 45.4%;
+}
+
+.arrow-left-container{
+    width: 30%;
+    display: flex;
+    justify-content: center;
+    position: relative;
+    top: 190px;
+    left: 70px;
+}
+
+.right-arrow-container {
+    display: flex;
+    justify-content: center;
+    position: relative;
+    top: 190px;
+    left: 100px;
+}
+
+.image-placer{
+    margin-left: 85px;
+    height: 400px;
+    width: 300px;
+    border: 2px solid black;
+    border-radius: 20px;
+}
+
+.event-viewer-right {
+    margin-top:30px;
+}
+
+.event-name {
+    max-width: 1000px;
+    font-weight: 600;
+    font-size: 1.5em;
+    margin-bottom: 10px;
+}
+.event-date {
+    margin-bottom: 50px;
+}
+
+.event-description {
+    font-weight: 500;
+    max-width: 500px;
+    max-height: 600px;
+}
+
+/* third section */
+.partnerships-title-container {
+    position: relative;
+    top: -200px;
+}
+.title,
+.subtitle {
+    display: flex;
+    justify-content: center;
+    color: white;
+}
+
+.title {
+    font-weight: 900;
+    font-size: 2.5em;
+    margin-bottom: 10px;
+}
+.subtitle {
+    font-weight: 100;
+    font-size: 1.3em;
+}
+
+.company-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-right: 60px;
+    position: relative;
+    top: -200px;
+    padding: 0px 150px;
+}
+.company-container img{
+    max-width: 100%;
+}
+.logos {
+    transform: scale(0.3);
+}
+
+/* fourth section BLUE */
+.blue-above-curve {
+    background-image: url('blue-above-curve.svg');
+}
+.last-curve {
+    background-image: url('last-curve.svg');
+}
+#blue-above-curve {
+    position: relative;
+    top: -200px;
+    z-index: -1;
+}
+
+.row-boxes {
+    display: flex;
+    justify-content: space-between;
+    padding: 50px 200px;
+}
+
+.box {
+    width: 150px;
+    height: 150px;
+    border: 1px solid black;
+    border-radius: 15px;
+}
+.captions {
+    width: 150px;
+}
+.captions p {
+    display: flex;
+    justify-content: center;
+}
+.captions #name {
+    margin-top: 10px;
+    font-weight: 500;
+}
+.captions #position {
+    margin-top: -15px;
+    font-weight: 300;
+}
+.second-row-container {
+    margin-top: -60px;
+}
+
+/* fifth section */
+.contact-us-container {
+    position: relative;
+    top: -450px;
+    margin-left: 200px;
+}
+.contact-title {
+    color: white;
+    font-weight: 900;
+    font-size: 2.5em;
+}
+.contact-subtitle {
+    color: white;
+    font-weight: 200;
+    margin-top: 15px;
+    margin-bottom: 45px;
+}
+.forms {
+    margin-bottom: 25px;
+}
+.forms input{
+    width: 400px;
+    height: 25px;
+    background-color: transparent;
+    border: 1px solid white;
+    border-radius: 10px;
+    color: rgba(255, 255, 255, 1);
+    padding-left: 10px;
+}
+.forms input:focus {
+    outline: none;
+}
+
+.forms input::-webkit-input-placeholder{
+    padding-left: 0px;
+    font-family: 'Inter', sans-serif;
+    font-weight: 300;
+}
+
+.forms-message input{
+    width: 400px;
+    height: 200px;
+    background-color: transparent;
+    border: 1px solid white;
+    border-radius: 10px;
+    color: rgba(255, 255, 255, 0.8);
+    padding-left: 10px;
+    resize: none;
+}
+
+.forms-message:focus {
+    outline: none;
+}
+
+.forms-message input::-webkit-input-placeholder{
+    padding:0px;
+    font-family: 'Inter', sans-serif;
+    font-weight: 300;
+    margin: 0px;
+}
+
+.btn {
+    margin-top: 30px;
+    font-family: 'Inter', sans-serif;
+    color: white;
+    font-weight: 400;
+    background-color: #D88282;
+    display: inline-block;
+    width: 100px;
+    text-align: center;
+    text-decoration: none;
+    padding: 8px;
+    border-radius: 15px;
+}
+
+#white-curve{
+    position: relative;
+    top: -400px;
+    z-index: -1;
+}
+
+#last-section{
+    background-color: #E0E0E0;
+    position: relative;
+    height: 500px;
+    top: 500px;
+    z-index: -1;
+}
+
+.content-container {
+    display: flex;
+}
+
+.content-container > * {
+    min-width: 25%;
+    display: flex;
+    justify-content: center;
+}
+
+#unt {
+    font-weight: 900;
+    font-size: 2.3em;
+    margin-bottom: -5px;
+}
+#unt-sub {
+    font-weight: 300;
+    font-size: 0.9em;
+}
+#unt-alr {
+    margin-top: 200px;
+    margin-bottom: 0px;
+    font-weight: 300;
+    font-size: 0.7em;
+}
+
+#unt2 {
+    font-weight: 600;
+    font-size: 1.1em;
+}
+#unt2-sub{
+    font-weight: 200;
+    font-size: 0.9em;
+}
+
+#Join-Us a {
+    text-decoration: none;
+    color: white;
+}
